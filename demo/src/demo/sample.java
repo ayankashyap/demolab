@@ -14,7 +14,33 @@ public class sample {
 
         System.out.print("Enter an operator (+, -, *, /): ");
         char operator = scanner.next().charAt(0);
+        
+        scanner.close();
+        double output;
+        
+        switch(operator)
+        {
+        case '+':
+        	output = 1;
+            break;
 
+        case '-':
+        	output = 2;
+            break;
+
+        case '*':
+        	output = 3;
+            break;
+
+        case '/':
+        	output = 4;
+            break;
+
+        default:
+            System.out.printf("You have entered wrong operator");
+            return;
+        }
+        
         scanner.close();
 	}
 }
